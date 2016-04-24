@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" minimumFontSize="9" preferredMaxLayoutWidth="269" translatesAutoresizingMaskIntoConstraints="NO" id="BJg-Em-MYB">
-                                <rect key="frame" x="30" y="122" width="261" height="54"/>
+                                <rect key="frame" x="29" y="122" width="261" height="54"/>
                                 <color key="backgroundColor" red="0.0" green="0.5" blue="0.53197737069999995" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Hamburguesa">
@@ -31,24 +31,6 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hlP-VJ-i8F">
-                                <rect key="frame" x="46" y="207" width="229" height="37"/>
-                                <color key="backgroundColor" red="0.84022090517241377" green="0.84275323275862069" blue="0.86096443965517244" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Quiero una hamburguesa">
-                                            <attributes>
-                                                <color key="NSColor" red="0.41139547413793104" green="0.41293103448275864" blue="0.4467133620689655" alpha="1" colorSpace="calibratedRGB"/>
-                                                <font key="NSFont" size="20" name="Futura-CondensedExtraBold"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
-                                <connections>
-                                    <action selector="ObtenPaisYHamburguesa" destination="BYZ-38-t0r" eventType="touchUpInside" id="33A-f9-Lxd"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="País" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TFh-o4-69K">
                                 <rect key="frame" x="121" y="28" width="78" height="62"/>
                                 <color key="backgroundColor" red="0.0" green="0.5" blue="0.53197737068965523" alpha="0.0" colorSpace="calibratedRGB"/>
@@ -59,6 +41,24 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hlP-VJ-i8F">
+                                <rect key="frame" x="47" y="207" width="226" height="35"/>
+                                <color key="backgroundColor" red="0.84022090517241377" green="0.84275323275862069" blue="0.86096443965517244" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Quiero una hamburguesa!!!">
+                                            <attributes>
+                                                <color key="NSColor" red="0.41139547413793104" green="0.41293103448275864" blue="0.4467133620689655" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="18" name="Futura-CondensedExtraBold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="ObtenPaisYHamburguesa" destination="BYZ-38-t0r" eventType="touchUpInside" id="33A-f9-Lxd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.099137931034482762" green="0.5" blue="0.53197737068965523" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
