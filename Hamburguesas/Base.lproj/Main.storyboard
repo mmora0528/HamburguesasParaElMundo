@@ -1,25 +1,83 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Hamburguesas" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="Mqa-U0-gxb"/>
+                        <viewControllerLayoutGuide type="bottom" id="T4u-3D-V3S"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="view" contentMode="redraw" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" minimumFontSize="9" preferredMaxLayoutWidth="269" translatesAutoresizingMaskIntoConstraints="NO" id="BJg-Em-MYB">
+                                <rect key="frame" x="30" y="122" width="261" height="54"/>
+                                <color key="backgroundColor" red="0.0" green="0.5" blue="0.53197737069999995" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Hamburguesa">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="41" name="Futura-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hlP-VJ-i8F">
+                                <rect key="frame" x="46" y="207" width="229" height="37"/>
+                                <color key="backgroundColor" red="0.84022090517241377" green="0.84275323275862069" blue="0.86096443965517244" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Quiero una hamburguesa">
+                                            <attributes>
+                                                <color key="NSColor" red="0.41139547413793104" green="0.41293103448275864" blue="0.4467133620689655" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="20" name="Futura-CondensedExtraBold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="ObtenPaisYHamburguesa" destination="BYZ-38-t0r" eventType="touchUpInside" id="33A-f9-Lxd"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="País" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TFh-o4-69K">
+                                <rect key="frame" x="121" y="28" width="78" height="62"/>
+                                <color key="backgroundColor" red="0.0" green="0.5" blue="0.53197737068965523" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="Sy4-UJ-NRR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="44"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.099137931034482762" green="0.5" blue="0.53197737068965523" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="hlP-VJ-i8F" firstAttribute="centerX" secondItem="TFh-o4-69K" secondAttribute="centerX" id="2SC-EA-pfp"/>
+                            <constraint firstItem="hlP-VJ-i8F" firstAttribute="centerX" secondItem="BJg-Em-MYB" secondAttribute="centerX" id="JLg-Wq-I8z"/>
+                            <constraint firstItem="BJg-Em-MYB" firstAttribute="top" secondItem="Mqa-U0-gxb" secondAttribute="bottom" constant="102" id="T8i-aB-Gj1"/>
+                            <constraint firstItem="hlP-VJ-i8F" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="f69-sv-QDF"/>
+                            <constraint firstItem="TFh-o4-69K" firstAttribute="top" secondItem="Mqa-U0-gxb" secondAttribute="bottom" constant="8" symbolic="YES" id="y34-ng-vDc"/>
+                            <constraint firstItem="hlP-VJ-i8F" firstAttribute="top" secondItem="BJg-Em-MYB" secondAttribute="bottom" constant="31" id="zic-pO-ANZ"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="lbHamburguesa" destination="BJg-Em-MYB" id="dcm-Yd-c7Q"/>
+                        <outlet property="lbPais" destination="TFh-o4-69K" id="edN-Ea-Iz6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="162" y="376.99999999999994"/>
         </scene>
     </scenes>
 </document>
